@@ -5,8 +5,7 @@
 class Oftr < Formula
   desc "OpenFlow to YAML Translator and Microservice"
   homepage "https://github.com/byllyfish/oftr"
-  url "https://github.com/byllyfish/oftr/archive/v0.32.0.tar.gz"
-  sha256 "77145e292eb96a18724235ef8d748ed3cf8abee453aaa7ce5856f6f4b85c1753"
+  head "https://github.com/byllyfish/oftr", :using => :git, :branch => :master
 
   depends_on "cmake" => :build
 
