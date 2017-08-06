@@ -8,7 +8,8 @@ class Oftr < Formula
   head "https://github.com/byllyfish/oftr", :using => :git, :branch => :master
 
   depends_on "cmake" => :build
-
+  depends_on "go" => :build
+  
   def install
     args = std_cmake_args
 
