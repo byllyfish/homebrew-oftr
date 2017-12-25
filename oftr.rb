@@ -8,7 +8,8 @@ class Oftr < Formula
   bottle do
     root_url "https://dl.bintray.com/byllyfish/bottles"
     cellar :any_skip_relocation
-    sha256 "e03b65131a949933e27cffd16d099bde08b2988acc33c1a2a7310515e20b0ad7" => :sierra
+    rebuild 1
+    sha256 "de1b67829135db012c31b378adae97b1f54466b1cde107a302cffc3757a92d8a" => :high_sierra
   end
 
   depends_on "cmake" => :build
