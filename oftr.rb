@@ -19,7 +19,7 @@ class Oftr < Formula
 
     mkdir "build" do
       system "cmake", "..", *args
-      system "make", "test", "install"
+      system "make", "install"
     end
   end
 
