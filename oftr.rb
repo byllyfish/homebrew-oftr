@@ -1,8 +1,8 @@
 class Oftr < Formula
   desc "OpenFlow to YAML Translator and Microservice"
   homepage "https://github.com/byllyfish/oftr"
-  url "https://launchpad.net/~byllyfish/+archive/ubuntu/oftr/+files/oftr_0.45.0.orig.tar.gz"
-  sha256 "d54cdf84bf54478f51cea56dba2a42f88642031da84374a7662c1a215ab0c115"
+  url "https://launchpad.net/~byllyfish/+archive/ubuntu/oftr/+files/oftr_0.46.0.orig.tar.gz"
+  sha256 "bf0ccb1ff40816190b0662368a83ef9f3ba3158210fadacb0a1ec24eac69c41b"
   head "https://github.com/byllyfish/oftr.git"
 
   bottle do
