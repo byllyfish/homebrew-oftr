@@ -7,7 +7,7 @@ script:
   - brew tap byllyfish/oftr
   - brew update
   - brew install --build-bottle oftr
-  - brew bottle oftr
+  - brew --no-rebuild --root-url="https://github.com/byllyfish/homebrew-oftr/releases/download/$TRAVIS_TAG" bottle oftr
 
 deploy:
   provider: releases
