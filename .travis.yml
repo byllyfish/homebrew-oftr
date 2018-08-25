@@ -20,6 +20,7 @@ deploy:
     repo: byllyfish/homebrew-oftr
     tags: true
 
+# Only tagged releases with version numbers.
 branches:
   only:
-    - "/^\\d+\\.\\d+\\.\\d+$/"
+    - /^\d+\.\d+\.\d+$/
