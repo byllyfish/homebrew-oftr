@@ -1,0 +1,25 @@
+language: cpp
+
+os:
+  - osx
+
+script:
+  - brew tap byllyfish/oftr
+  - brew update
+  - brew install --build-bottle oftr
+  - brew bottle oftr
+
+deploy:
+  provider: releases
+  api_key:
+    secure: fCd0q29ejWIiujLYnvTeNXsMn2xK3JufL4gdqoWcxr/vvcwxJe1iIahBhK+eASUVLUUpVnfxgLFRSL5hQEW4qp2nqKyM0YucYi+SOEloeP/6ccQPpqxEWEXBKtsDszIRxufLkCbGZ8QMqZEqh8wy4w5y6bQx8rNkJDtOxFqCnNBZeX08EbY8yBsAKQUREQG6RLp69VsZufCafHufBpKfn6PJF4uUftC7quEtAW6BHZkrazKGyYnqUS3SXQgQMWbxhNXu5tUlZzHCD3mFfItFR1rLyGImdOyVQ8fTt/PzukSpIoxViMrUsGLdmkW2X2BR7mZvCC5VnCjxQQAhUqLZJFOVaf6nz/JtlgU9SB9XMsDB037/sDa/b8nmSi3Rh0gobYf9kC0+Ri/byhJnuwtg5qpXiyYCQWTdTqlFXHy91jUI97YOZeMXP400b0jKkoDuiHiHT79AjlLz0Xg89KwK1gQsBpK69CS3/7staupKWpcKgdAjA/esfB7kw4YOF1VzzhfVNfF+Yy0nL74WLvRLgoZj3rNe0JkZd5pmUZzG0/Q8WH++6xI3211h/VFkcPNm0KPBJWPGGDZAccBPjpsvyqPFMDFPaGLQ7urhp5+ka5QQZ+TXIb16QCKJuPGyV410BHD18QICzn5P7fN6w+kR11t5QcNU/RGtw/QNyn+DiIE=
+  file_glob: true
+  file: *.bottle.tar.gz
+  skip_cleanup: true
+  on:
+    repo: byllyfish/homebrew-oftr
+    tags: true
+
+branches:
+  only:
+    - "/^\\d+\\.\\d+\\.\\d+$/"
