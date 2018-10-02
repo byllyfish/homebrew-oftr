@@ -6,9 +6,9 @@ class Oftr < Formula
   head "https://github.com/byllyfish/oftr.git"
 
   bottle do
-    root_url "https://github.com/byllyfish/homebrew-oftr/releases/download/0.52.0"
+    root_url "https://github.com/byllyfish/homebrew-oftr/releases/download/0.53.0"
     cellar :any_skip_relocation
-    sha256 "59b7ab7faf04d99d5e21ea584aa2fd643a7033d6c46c3cd32f07373094623777" => :high_sierra
+    sha256 "2a4a8587eec846fa64fd6d295310be1d0989bae9743536126483c6e5bf90e7ef" => :high_sierra
   end
 
   depends_on "cmake" => :build
